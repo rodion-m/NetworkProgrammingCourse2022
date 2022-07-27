@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousSocketTcpServer", "AsynchronousSocketTcpServer\AsynchronousSocketTcpServer.csproj", "{6ED5AB23-CB83-4CF3-91CA-7113A8D0B816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsynchronousSocketTcpClient", "AsynchronousSocketTcpClient\AsynchronousSocketTcpClient.csproj", "{EC207B7B-5FD4-4606-814A-153338BAB781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientExample", "HttpClientExample\HttpClientExample.csproj", "{68BE2F29-05C6-4A60-87AB-A47B3C89536E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDownloader", "FileDownloader\FileDownloader.csproj", "{4BBD14E4-4273-475B-8CEC-9BA58B328B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MinimalWebApi", "MinimalWebApi\MinimalWebApi.csproj", "{898ADAD8-D60C-4E84-BA42-380C00E13A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpApiClient", "HttpApiClient\HttpApiClient.csproj", "{BAF58984-7556-4994-9ED0-7496D7A958D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTelegramBot", "JobTelegramBot\JobTelegramBot.csproj", "{B6061878-0BA7-4F28-9D48-B7699D176ACE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6ED5AB23-CB83-4CF3-91CA-7113A8D0B816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6ED5AB23-CB83-4CF3-91CA-7113A8D0B816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6ED5AB23-CB83-4CF3-91CA-7113A8D0B816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6ED5AB23-CB83-4CF3-91CA-7113A8D0B816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC207B7B-5FD4-4606-814A-153338BAB781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC207B7B-5FD4-4606-814A-153338BAB781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC207B7B-5FD4-4606-814A-153338BAB781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC207B7B-5FD4-4606-814A-153338BAB781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68BE2F29-05C6-4A60-87AB-A47B3C89536E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68BE2F29-05C6-4A60-87AB-A47B3C89536E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68BE2F29-05C6-4A60-87AB-A47B3C89536E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68BE2F29-05C6-4A60-87AB-A47B3C89536E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBD14E4-4273-475B-8CEC-9BA58B328B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBD14E4-4273-475B-8CEC-9BA58B328B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBD14E4-4273-475B-8CEC-9BA58B328B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBD14E4-4273-475B-8CEC-9BA58B328B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898ADAD8-D60C-4E84-BA42-380C00E13A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898ADAD8-D60C-4E84-BA42-380C00E13A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898ADAD8-D60C-4E84-BA42-380C00E13A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898ADAD8-D60C-4E84-BA42-380C00E13A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAF58984-7556-4994-9ED0-7496D7A958D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAF58984-7556-4994-9ED0-7496D7A958D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAF58984-7556-4994-9ED0-7496D7A958D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAF58984-7556-4994-9ED0-7496D7A958D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
