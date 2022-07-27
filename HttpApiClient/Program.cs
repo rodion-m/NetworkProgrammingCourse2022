@@ -12,7 +12,9 @@ var httpClient = new HttpClient()
 
 string? text = Console.ReadLine();
 
-EmployersResponse? result = await httpClient.GetFromJsonAsync<EmployersResponse>($"https://api.hh.ru/employers?text={text}");
+EmployersResponse? result = await httpClient.GetFromJsonAsync<EmployersResponse>(
+    $"https://api.hh.ru/employers?text={text}");
+
 IEnumerable<string> enumerable = result.Items.Select(item => item.Name);
 
 Console.WriteLine(string.Join(Environment.NewLine, enumerable));
