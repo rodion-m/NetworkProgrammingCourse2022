@@ -14,6 +14,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpApiClient", "HttpApiCli
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobTelegramBot", "JobTelegramBot\JobTelegramBot.csproj", "{B6061878-0BA7-4F28-9D48-B7699D176ACE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeadhunterWebApi", "HeadhunterWebApi\HeadhunterWebApi.csproj", "{8ACAB64C-1162-4213-A5DB-83653006DE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronousSocketServer", "SynchronousSocketServer\SynchronousSocketServer.csproj", "{C81FFE52-13F3-4442-8732-34EE85DF0AA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronousSocketClient", "SynchronousSocketClient\SynchronousSocketClient.csproj", "{C1F14D3C-78B4-429A-BE74-EA479CE892DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +54,17 @@ Global
 		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6061878-0BA7-4F28-9D48-B7699D176ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8ACAB64C-1162-4213-A5DB-83653006DE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8ACAB64C-1162-4213-A5DB-83653006DE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8ACAB64C-1162-4213-A5DB-83653006DE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8ACAB64C-1162-4213-A5DB-83653006DE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C81FFE52-13F3-4442-8732-34EE85DF0AA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81FFE52-13F3-4442-8732-34EE85DF0AA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81FFE52-13F3-4442-8732-34EE85DF0AA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81FFE52-13F3-4442-8732-34EE85DF0AA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

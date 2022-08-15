@@ -7,12 +7,4 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <PackageReference Include="Telegram.Bot" Version="18.0.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <ProjectReference Include="..\HeadhunterWebApi\HeadhunterWebApi.csproj" />
-    </ItemGroup>
-
 </Project>

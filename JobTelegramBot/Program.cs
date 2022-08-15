@@ -1,10 +1,11 @@
-﻿using Telegram.Bot;
+﻿using HeadhunterWebApi;
+using Telegram.Bot;
 using Telegram.Bot.Exceptions;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 
-var botClient = new TelegramBotClient("5461575235:AAFmf_41TAY9xUK-ufGxBEFGH3-gMbT8eWE");
+var botClient = new TelegramBotClient("5025298700:AAHNaRm-AhyS7xdJrODZNORIX1U5TanMZY0");
 
 using var cts = new CancellationTokenSource();
 
@@ -29,17 +30,17 @@ Console.ReadLine();
 cts.Cancel();
 
 async Task HandleUpdateAsync(
-    ITelegramBotClient botClient, 
-    Update update, 
+    ITelegramBotClient botClient,
+    Update update,
     CancellationToken cancellationToken)
 {
     // Only process Message updates: https://core.telegram.org/bots/api#message
     // if (update.Message is not { } message)
     //     return;
-    if(update.Message is null)
+    if (update.Message is null)
         return;
     Message message = update.Message;
-    
+
     // Only process text messages
     if (message.Text is not { } messageText)
         return;
@@ -48,19 +49,43 @@ async Task HandleUpdateAsync(
 
     Console.WriteLine($"Received a '{messageText}' message in chat {chatId}.");
 
-    if (messageText == "/time")
+    switch (messageText)
     {
-        // Echo received message text
-        Message sentMessage = await botClient.SendTextMessageAsync(
+        case "/start":
+        {
+            await HandleStart();
+            break;
+        }
+        case "/all_employers":
+        {
+            await HandleAllEmployers();
+            break;
+        }
+        default:
+        {
+            Message sentMessage = await botClient.SendTextMessageAsync(
+                chatId: chatId,
+                text: $"Привет, {messageText}!",
+                cancellationToken: cancellationToken);
+            break;
+        }
+    }
+
+    Task HandleStart()
+    {
+        return botClient.SendTextMessageAsync(
             chatId: chatId,
-            text: DateTime.Now.ToString(),
+            text: "Пожалуйста, представьтесь!",
             cancellationToken: cancellationToken);
     }
-    else
+
+    async Task HandleAllEmployers()
     {
-        Message sentMessage = await botClient.SendTextMessageAsync(
+        var client = new HeadhunterClient();
+        EmployersResponse employers = await client.GetEmployersAsync(null);
+        _ = await botClient.SendTextMessageAsync(
             chatId: chatId,
-            text: "Нет такой команды",
+            text: employers.ToString(),
             cancellationToken: cancellationToken);
     }
 }
