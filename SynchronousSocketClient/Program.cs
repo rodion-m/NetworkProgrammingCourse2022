@@ -21,6 +21,12 @@ if (message == "GetDayOfWeek")
     DayOfWeek dayOfWeek = (DayOfWeek) dayOfWeekAsByte;
     Console.WriteLine(dayOfWeek);
 }
+else if(message == "GetDateTime")
+{
+    long binaryTime = BitConverter.ToInt64(responseBytes);
+    var dateTime = DateTime.FromBinary(binaryTime);
+    Console.WriteLine(dateTime);
+}
 else
 {
     var responseText = Encoding.UTF8.GetString(responseBytes);

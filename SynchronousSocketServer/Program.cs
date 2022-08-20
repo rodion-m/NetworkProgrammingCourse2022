@@ -34,6 +34,10 @@ while (true)
         case "GetDayOfWeek":
             connection.Send(new[] { (byte) DateTime.Now.DayOfWeek });
             break;
+        case "GetDateTime":
+            long binaryTime = DateTime.Now.ToBinary();
+            connection.Send(BitConverter.GetBytes(binaryTime));
+            break;
         default:
             Console.WriteLine($"Unknown message: {message}");
             connection.Send(Encoding.UTF8.GetBytes("UNKNOWN MESSAGE"));
