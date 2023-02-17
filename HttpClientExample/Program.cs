@@ -1,6 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Text;
+using System.Text.RegularExpressions;
 
-using System.Text;using System.Text.RegularExpressions;
 Console.OutputEncoding = Encoding.UTF8;
 
 var url = Console.ReadLine();
@@ -12,7 +12,7 @@ Regex regex = new Regex(pattern);
 
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 using HttpClient client = new HttpClient();
-HttpResponseMessage response = await client.GetAsync(url);
+using HttpResponseMessage response = await client.GetAsync(url);
 string htmlBody = await response.Content.ReadAsStringAsync();
 MatchCollection matches = regex.Matches(htmlBody);
 Console.WriteLine($"Кол-во совпадений: {matches.Count}");
