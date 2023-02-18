@@ -20,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronousSocketServer", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SynchronousSocketClient", "SynchronousSocketClient\SynchronousSocketClient.csproj", "{C1F14D3C-78B4-429A-BE74-EA479CE892DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatTOP", "ChatTOP\ChatTOP.csproj", "{4CDD38B8-C9BF-4724-805C-FB8B79E0EDED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatTOP.Test", "ChatTOP.Test\ChatTOP.Test.csproj", "{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +70,13 @@ Global
 		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1F14D3C-78B4-429A-BE74-EA479CE892DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CDD38B8-C9BF-4724-805C-FB8B79E0EDED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CDD38B8-C9BF-4724-805C-FB8B79E0EDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CDD38B8-C9BF-4724-805C-FB8B79E0EDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CDD38B8-C9BF-4724-805C-FB8B79E0EDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
