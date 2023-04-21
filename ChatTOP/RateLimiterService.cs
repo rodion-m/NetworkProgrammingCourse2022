@@ -42,9 +42,9 @@ public class RateLimiterService : IRateLimiterService
         if (userRequests.Count == _rateLimitInfo.RequestsCount)
         {
             // В случае если время не истекло, но очередь заполнена, удаляем первый элемент
-            userRequests.Dequeue();
+            userRequests.Dequeue(); //O(1)
         }
-        userRequests.Enqueue(now);
+        userRequests.Enqueue(now); //O(1)
         return false;
     }
 
@@ -53,7 +53,8 @@ public class RateLimiterService : IRateLimiterService
     {
         if (userRequests.Count == _rateLimitInfo.RequestsCount)
         {
-            userRequests.TryPeek(out var firstRequestTime);
+            //userRequests.TryPeek(out var firstRequestTime);
+            var firstRequestTime = userRequests.First();
             timeToWait = GetTimeToWait(now, firstRequestTime);
             return timeToWait > TimeSpan.Zero;
         }

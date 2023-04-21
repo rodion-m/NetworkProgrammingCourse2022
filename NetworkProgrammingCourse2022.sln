@@ -24,6 +24,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatTOP", "ChatTOP\ChatTOP.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatTOP.Test", "ChatTOP.Test\ChatTOP.Test.csproj", "{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "messenger", "messenger", "{ECC7A430-E0F2-4289-B0A6-C7AA12AEC9C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRMessenger.WPFClientMVVM", "chat\SignalRMessenger.WPFClientMVVM\SignalRMessenger.WPFClientMVVM.csproj", "{CD5571D0-2196-4B95-9829-4F0C34E82132}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRMessenger.Server", "chat\SignalRMessenger.Server\SignalRMessenger.Server.csproj", "{6D0B878F-B463-4349-B25C-D5C4CD3DC460}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +84,17 @@ Global
 		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B649065B-8F82-45F3-937A-9E1EC3C4B1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD5571D0-2196-4B95-9829-4F0C34E82132}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5571D0-2196-4B95-9829-4F0C34E82132}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5571D0-2196-4B95-9829-4F0C34E82132}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5571D0-2196-4B95-9829-4F0C34E82132}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D0B878F-B463-4349-B25C-D5C4CD3DC460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D0B878F-B463-4349-B25C-D5C4CD3DC460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D0B878F-B463-4349-B25C-D5C4CD3DC460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D0B878F-B463-4349-B25C-D5C4CD3DC460}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CD5571D0-2196-4B95-9829-4F0C34E82132} = {ECC7A430-E0F2-4289-B0A6-C7AA12AEC9C1}
+		{6D0B878F-B463-4349-B25C-D5C4CD3DC460} = {ECC7A430-E0F2-4289-B0A6-C7AA12AEC9C1}
 	EndGlobalSection
 EndGlobal

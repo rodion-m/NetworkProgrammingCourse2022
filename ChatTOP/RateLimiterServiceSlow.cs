@@ -8,7 +8,7 @@ namespace ChatTOP;
 /// <remarks>This class is NOT fully thread-safe</remarks>
 public class RateLimiterServiceSlow : IRateLimiterService
 {
-    private readonly ConcurrentDictionary<long, List<DateTime>> _userIdToRequestTimes =
+    private readonly ConcurrentDictionary<long /*userId*/, List<DateTime>> _userIdToRequestTimes =
         new();
     
     private readonly RateLimitInfo _rateLimitInfo;
@@ -26,7 +26,8 @@ public class RateLimiterServiceSlow : IRateLimiterService
         var userRequests = _userIdToRequestTimes.GetOrAdd(
             userId, _ => new List<DateTime>());
         var now = DateTime.UtcNow;
-        var recentRequests = userRequests.Where(IsRecentRequest).ToArray();
+        //userRequests.RemoveAll(requestDateTime => !IsRecentRequest(requestDateTime));
+        var recentRequests = userRequests.Where(IsRecentRequest).Take(10).ToArray();
         if (recentRequests.Length >= _rateLimitInfo.RequestsCount)
         {
             timeToWait = _rateLimitInfo.Interval - (now - recentRequests[0]);
@@ -36,6 +37,7 @@ public class RateLimiterServiceSlow : IRateLimiterService
         timeToWait = TimeSpan.Zero;
         return false;
 
-        bool IsRecentRequest(DateTime requestTime) => now - requestTime < _rateLimitInfo.Interval;
+        bool IsRecentRequest(DateTime requestTime) 
+            => now - requestTime < _rateLimitInfo.Interval;
     }
 }
